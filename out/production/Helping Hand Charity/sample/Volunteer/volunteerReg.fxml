@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="550.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Volunteer.volunteerRegController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="550.0" style="-fx-background-color: #6F72A8;">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="106.0" prefWidth="340.0" style="-fx-text-fill: #fff;" text="Register as a Volunteer">
+               <font>
+                  <Font name="Segoe UI" size="28.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="175.0" layoutY="648.0" prefHeight="30.0" prefWidth="200.0" style="-fx-text-fill: #fff;" text="Your help is much appreciated">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="105.0" layoutY="110.0" prefHeight="29.0" prefWidth="340.0" style="-fx-text-fill: #fff;" text="On what time would you like to volunteer?">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <VBox layoutX="85.0" layoutY="153.0" prefHeight="470.0" prefWidth="380.0" style="-fx-background-color: rgba(0,0,0,0.2);">
+         <children>
+            <TextField fx:id="txtTiming" alignment="CENTER" prefHeight="26.0" prefWidth="297.0" promptText="Timing" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="80.0" right="80.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <JFXButton fx:id="btnEven" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#evenRegister" prefHeight="62.0" prefWidth="334.0" style="-fx-background-color: #f3f3f3; -fx-text-fill: #333;" text="           Sat, Mon, Wed" textAlignment="RIGHT">
+               <graphic>
+                  <ImageView fitHeight="122.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/Satudurday.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="40.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnOdd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#oddRegister" prefHeight="62.0" prefWidth="334.0" style="-fx-background-color: #f3f3f3; -fx-text-fill: #333;" text="           Sun, Tue, Thu " textAlignment="RIGHT">
+               <graphic>
+                  <ImageView fitHeight="122.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/Sunday.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="60.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnFri" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#friRegister" prefHeight="62.0" prefWidth="334.0" style="-fx-background-color: #f3f3f3; -fx-text-fill: #333;" text="               Fridays        " textAlignment="RIGHT">
+               <graphic>
+                  <ImageView fitHeight="122.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/Friday.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="60.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnBack" layoutY="655.0" onAction="#backFunc" prefHeight="30.0" prefWidth="158.0" style="-fx-background-color: none; -fx-text-fill: #fff;" text="Dashboard" textAlignment="RIGHT">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/icons8-back-100.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="175.0" layoutY="632.0" prefHeight="30.0" prefWidth="200.0" style="-fx-text-fill: #fff;" text="Thank you for joining us ">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

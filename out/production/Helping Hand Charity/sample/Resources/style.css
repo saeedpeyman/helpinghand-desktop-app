@@ -1,0 +1,26 @@
+.root {
+  -fx-background-image: url("../Resources/backround.png") no-repeat center
+    center/cover;
+  -fx-background-size: cover;
+}
+
+/* .button-signupButton:hover {
+  -fx-border-color: #333;
+}
+
+.button-hey {
+  -fx-border-color: blue;
+  -fx-background-color: green;
+} */
+/* 
+.area-txtEmail {
+}
+
+.text-field {
+  -fx-background-color: -fx-text-box-border, -fx-background;
+  -fx-background-insets: 0, 0 0 1 0;
+  -fx-background-radius: 0;
+}
+.text-field:focused {
+  -fx-background-color: -fx-focus-color, -fx-background;
+} */
