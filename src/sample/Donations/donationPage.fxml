@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="743.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Donations.donationPageController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="743.0" style="-fx-background-color: #6F72A8;">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="106.0" prefWidth="538.0" style="-fx-text-fill: #fff;" text="Donate">
+               <font>
+                  <Font name="Segoe UI" size="28.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="202.0" layoutY="597.0" prefHeight="29.0" prefWidth="340.0" style="-fx-text-fill: #fff;" text="Thank You For Your Generosity!">
+         <font>
+            <Font name="Segoe UI Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="105.0" layoutY="122.0" prefHeight="29.0" prefWidth="340.0" style="-fx-text-fill: #fff;" text="Please enter your details below">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <VBox layoutX="85.0" layoutY="163.0" prefHeight="400.0" prefWidth="380.0" style="-fx-background-color: rgba(0,0,0,0.2);">
+         <children>
+            <TextField fx:id="txtID" alignment="CENTER" promptText="ID (Not Required - Only for Update and Delete)" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtAmount" alignment="CENTER" promptText="Amount" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="txtPurpose" alignment="CENTER" prefHeight="23.0" prefWidth="320.0" promptText="Purpose" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtComment" alignment="CENTER" layoutX="10.0" layoutY="10.0" promptText="Comment (Optional)" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="txtCard" alignment="CENTER" prefHeight="23.0" prefWidth="320.0" promptText="Credit Card Number" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtCVV" alignment="CENTER" prefHeight="18.0" prefWidth="320.0" promptText="CVV (The number behind your card)" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnBack" layoutX="-6.0" layoutY="639.0" onAction="#backFunc" prefHeight="30.0" prefWidth="158.0" style="-fx-background-color: none; -fx-text-fill: #fff;" text="Dashboard" textAlignment="RIGHT">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/icons8-back-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <VBox layoutX="517.0" layoutY="206.0" prefHeight="325.0" prefWidth="180.0" style="-fx-background-color: rgba(0,0,0,0.2);">
+         <children>
+            <JFXButton fx:id="btnDonate" alignment="CENTER" onAction="#funcDonate" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: none; -fx-border-width: 1px; -fx-text-fill: #fff; -fx-border-color: #6F72A8; -fx-border-radius: 50%;" text="Donate">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="60.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete" alignment="CENTER" onAction="#funcDelete" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: none; -fx-border-width: 1px; -fx-text-fill: #fff; -fx-border-color: red; -fx-border-radius: 50%;" text="Delete">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdate" alignment="CENTER" onAction="#funcUpdate" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: none; -fx-border-width: 1px; -fx-text-fill: #fff; -fx-border-color: green; -fx-border-radius: 50%;" text="Update">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

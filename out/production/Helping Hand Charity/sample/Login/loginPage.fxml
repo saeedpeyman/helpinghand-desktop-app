@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="720.0" maxWidth="1200.0" minHeight="720.0" minWidth="1200.0" prefHeight="720.0" prefWidth="1200.0" stylesheets="@../Resources/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login.loginPageController">
+   <children>
+      <VBox layoutY="161.0" prefHeight="158.0" prefWidth="1200.0" style="-fx-background-color: rgba(0,0,0,0.2);">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="86.0" prefWidth="1210.0" style="-fx-text-fill: #fff;" text="Welcome to Helping Hand" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="42.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="1210.0" style="-fx-text-fill: #fff;" text="While you are standing, lend a hand to a fallen one" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="320.0" prefHeight="39.0" prefWidth="884.0" style="-fx-text-fill: #fff;" text="Please login using your credentials" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="410.0" layoutY="360.0" prefHeight="222.0" prefWidth="380.0" style="-fx-background-color: rgba(0,0,0,0.2);">
+         <children>
+            <TextField fx:id="txtUsername" alignment="CENTER" promptText="Username" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="txtPassword" alignment="CENTER" layoutX="10.0" layoutY="10.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0 0 1.5 0; -fx-text-fill: #fff; -fx-border-color: #6F72A8;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <JFXButton fx:id="BtnLogin" alignment="CENTER" onAction="#FuncLogin" prefHeight="39.0" prefWidth="180.0" style="-fx-background-color: none; -fx-border-width: 1px; -fx-text-fill: #fff; -fx-border-color: #6F72A8; -fx-border-radius: 50%;" text="Login">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="100.0" right="100.0" top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="527.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBack" layoutY="635.0" onAction="#backFunc" prefHeight="30.0" prefWidth="206.0" style="-fx-background-color: none; -fx-text-fill: #fff;" text="Back to Main Page" textAlignment="RIGHT">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/icons8-back-100.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

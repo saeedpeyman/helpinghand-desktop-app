@@ -1,0 +1,5 @@
+.root {
+  -fx-background-image: url("../sample/backround.png") no-repeat center
+    center/cover;
+  -fx-background-size: cover;
+}
